@@ -14,6 +14,7 @@ public class User {
     @Column(name = "name")
     private String name;
 
+    //надо разобраться со связями между таблицами
     @OneToMany//(mappedBy = "users")
     @JoinColumn(name = "user_id")
     private List<Post> posts;

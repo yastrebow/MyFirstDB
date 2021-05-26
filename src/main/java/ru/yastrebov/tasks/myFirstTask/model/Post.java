@@ -20,6 +20,7 @@ public class Post {
     @Column(name = "text")
     private String text;
 
+    //надо разобраться со связями между таблицами
     @ManyToOne
     @JoinColumn(name = "user_id")
     private User user;
